@@ -60,9 +60,7 @@ class _TaskTileState extends State<TaskTile> {
                       task.isCompleted ? TextDecoration.lineThrough : null,
                 ),
               ),
-              subtitle: Text(
-                'Subtasks: ${task.subtasks.length}',
-              ),
+              subtitle: Text('Subtasks: ${task.subtasks.length}'),
               trailing: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -106,10 +104,10 @@ class _TaskTileState extends State<TaskTile> {
               ),
               const SizedBox(height: 8),
               if (task.subtasks.isEmpty)
-                const Padding(
-                  padding: EdgeInsets.symmetric(vertical: 8),
-                  child: Align(
-                    alignment: Alignment.centerLeft,
+                const Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(vertical: 8),
                     child: Text('No subtasks yet.'),
                   ),
                 )
@@ -121,7 +119,6 @@ class _TaskTileState extends State<TaskTile> {
                     final isDone = subtask['isDone'] ?? false;
 
                     return ListTile(
-                      contentPadding: const EdgeInsets.only(left: 8, right: 0),
                       leading: Checkbox(
                         value: isDone,
                         onChanged: (_) =>
