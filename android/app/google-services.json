@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "159301378958",
+    "project_id": "task-manager-minlee",
+    "storage_bucket": "task-manager-minlee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159301378958:android:3fc937e999acde0a9ebadf",
+        "android_client_info": {
+          "package_name": "com.example.task_manager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD21ORa9se-Lrh0TUL1KDqreJ7T0WGglss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
